@@ -12,7 +12,31 @@ An enterprise-grade predictive analytics pipeline designed to classify financial
 
 ---
 
-## 🏗️ System Architecture & Deliverables
+## 🏗️ System Architecture & Execution Pipeline
+
+```mermaid
+graph TD
+    A["Raw Financial Records Ingestion"] --> B["Continuous Demographic Normalization"]
+    A --> C["Historical Payment Inflection Tracking"]
+    B --> D["Feature Engineering Module"]
+    C --> D
+    D -->|compounding DTI x Utilization| E["Credit Stress Index (Engineered Domain Marker)"]
+    E --> F["Stratified Cross-Validation Splitting (80/20)"]
+    F --> G["Parallel Ensemble Evaluators"]
+    G --> H["Logistic Regression Core"]
+    G --> I["Decision Tree Hyperplanes"]
+    G --> J["Random Forest Ensembles"]
+    G --> K["Gradient Boosting Optimizers"]
+    H --> L["Model Selection Interface"]
+    I --> L
+    J --> L
+    K --> L
+    L --> M["Optimized Default Boundary Projections"]
+```
+
+---
+
+## 📂 Deliverables Layout
 
 ```text
 Credit_Scoring_Model/
